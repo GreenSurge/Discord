@@ -676,7 +676,7 @@ span[class*="timestampInline_"] {
                 align-content: center;
                 text-align: center;
                 width: calc(60vw - 270px - 50px);
-                position: fixed;
+                position: 12px;
                 pointer-events: none;
             }
 

@@ -1,5 +1,356 @@
 @import url("https://raw.githubusercontent.com/sadan4/discordStyles/refs/heads/main/src/qol/folderScrollBar.css");
 @import url('https://chloecinders.github.io/visual-refresh-compact-title-bar/desktop.css');
+@import url("https://rinlovesyou.github.io/Couve/snippets/couve-profile-popout.css");
+/* PinDMs Fixes */
+.vc-pindms-section-container {
+    text-transform: unset !important;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 500;
+    /* V Uncomment this line to use the default category color. */
+    /* color: var(--channels-default) !important; */
+}
+/* Hide elements where data-list-item-id contains "nitro" or "shop" */
+a[data-list-item-id*="nitro"],
+a[data-list-item-id*="shop"] {
+    display: none !important;
+}
+#vc-spotify-player {
+    background-color: var(--background-gradient-highest, var(--background-base-low)) !important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid var(--border-subtle);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 130px;
+    margin-bottom: 12px;
+}
+
+section[class^="panels_"] {
+    background: var(--background-gradient-high, var(--background-base-lowest));
+    border: 0px;
+    border-left: 0px;
+}
+
+section[class^="panels_"] div[class^="container__"] {
+    background-color: var(--background-gradient-highest, var(--background-base-low));
+    border: 1px solid var(--border-subtle);
+    border-radius: 20px;
+}
+
+section[class^="panels_"] div[class^="panel_"] {
+    margin-bottom: 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-subtle);
+}
+
+header[class^="header_"] {
+    border-bottom: 0px;
+}
+
+section[class^="panels_"] div[class^="listeningAlong_"] {
+    border: 1px solid var(--border-subtle) !important;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+.user-profile-modal-v2 {
+    .inner_c0bea0 {
+        padding: 0px !important;
+        gap: 0px !important;
+        flex-direction: column !important;
+        container-type: size;
+    }
+
+    .profile__9c3be {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: var(--radius-md);
+    }
+
+    &.custom-theme-background {
+        .inner_c0bea0 {
+            padding: 4px !important;
+            background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color)) !important;
+        }
+
+        .profile__9c3be {
+            width: calc(100% - 8px);
+            height: calc(100% - 8px);
+        }
+    }
+
+    .selected_b3f026 {
+        color: var(--text-secondary) !important;
+
+        &::after {
+            display: none;
+        }
+    }
+
+
+
+    .inner_c0bea0:has(.tabBarItem__37bfc:focus, .top_b3f026:focus, .tabBarPanel__37bfc:focus-within, .tabBarPanel__37bfc:focus) {
+
+        .profile__9c3be {
+
+            .markup__75297,
+            .section_bf424d {
+                visibility: hidden !important;
+                pointer-events: none !important;
+            }
+
+        }
+
+        .tabBarPanel__37bfc {
+            display: flex !important;
+            opacity: 1;
+            pointer-events: all !important;
+        }
+
+        .top_b3f026::before {
+            color: var(--text-secondary);
+            border-bottom: none !important;
+        }
+
+        .selected_b3f026 {
+            color: var(--selected-tab-item-color) !important;
+
+            &::after {
+                display: block !important;
+            }
+        }
+    }
+
+    .tabBarPanel__37bfc {
+        opacity: 0;
+        z-index: 999;
+        pointer-events: none !important;
+        padding: 0px 26px;
+    }
+
+    .container__37bfc {
+        margin-top: 270px;
+        padding: 18px 4px 26px;
+
+        .top_b3f026 {
+            padding-left: 26px;
+        }
+    }
+
+    .banner__68edb {
+        height: 100% !important;
+        border-radius: 0px;
+    }
+
+    .profileHeader__9c3be {
+        height: 100px;
+        overflow: hidden;
+
+        .mask__68edb {
+            >mask>circle {
+                transform: scale(0.419);
+            }
+
+            >foreignObject {
+                height: 80px;
+            }
+        }
+    }
+
+
+    .profileButtons__9c3be {
+        position: fixed;
+        right: 26px;
+        top: 230px !important;
+    }
+
+    .container__63ed3 {
+        position: fixed;
+        top: 220px !important;
+    }
+
+    .profileBody__9c3be {
+        margin-top: 98px;
+        padding-top: var(--space-xl);
+    }
+
+    .top_b3f026::before {
+        content: "User Info";
+        color: var(--text-primary);
+        border-bottom: 2px solid var(--text-primary) !important;
+        font-size: 14px;
+        font-weight: 600;
+        padding-bottom: 13px;
+        --tab-item-color: var(--text-primary);
+        margin: 0px var(--space-xl) 0px 8px;
+    }
+
+    .empty_e766f2 {
+        padding: 0px !important;
+        justify-content: center;
+    }
+
+    .tabBarItem__37bfc:hover {
+        color: var(--text-primary) !important;
+        cursor: pointer;
+
+        &::after {
+            display: block;
+        }
+    }
+
+    .profileAppConnections__9c3be {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .connection__9bfb9 {
+        border: 1px solid var(--border-subtle) !important;
+        border-radius: var(--radius-sm);
+        padding: var(--space-sm);
+
+        .accountName__9bfb9,
+        .platformUrlAnchor__9bfb9,
+        .connectionInfo__9bfb9 {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    .connectionInfo__9bfb9:not(:has(>.metadata__9bfb9>.connectedAccountVanityMetadata_fffe42)) {
+        justify-content: start;
+        padding-top: 3px;
+    }
+
+    .connection__9bfb9:has(.connectedAccountVanityMetadata_fffe42) {
+        order: -1;
+    }
+}.avatarWrapper__37e49 {
+    flex-direction: column;
+    width: auto;
+    min-width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    justify-content: center;
+    flex: 1 !important;
+    border-radius: var(--radius-sm);
+
+    .avatar__37e49 {
+        width: 20px !important;
+        height: 20px !important;
+
+        >svg {
+            scale: 0.625;
+            top: -8px;
+            left: -8px;
+        }
+    }
+
+    .nameTag__37e49 {
+        flex-grow: unset !important;
+        width: max-content;
+    }
+
+    .panelSubtextContainer__37e49 {
+        display: none;
+    }
+
+    .panelTitleContainer__37e49 {
+        margin: 0px;
+        width: fit-content;
+
+        >div {
+            line-height: 13px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-family: var(--font-primary);
+            font-size: 12px;
+            font-weight: 500;
+            width: fit-content;
+            overflow: hidden !important;
+        }
+    }
+}
+
+.buttons__37e49 {
+    display: contents;
+
+    .button__67645 {
+        display: flex;
+        flex-direction: column;
+        min-width: 48px;
+        width: auto;
+        flex: 1;
+        gap: 8px;
+        padding: 5px calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) - 4px);
+        height: 48px;
+
+        &::after {
+            color: inherit;
+            content: attr(aria-label);
+            line-height: 12px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-family: var(--font-primary);
+            font-size: 12px;
+            font-weight: 500;
+            max-width: 100%;
+            text-align: center;
+            overflow: hidden !important;
+        }
+
+        &.redGlow__67645::after {
+            color: var(--status-danger);
+        }
+    }
+}
+
+.container__37e49 {
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.micButtonParent__37e49 {
+    flex: 1;
+}
+.vc-smyn-suffix {
+    font-size: 0;
+    line-height: 0rem;
+}
+
+.username_c19a55:has(.vc-smyn-suffix):hover {
+    font-size: 0;
+    line-height: 0rem !important;
+
+    .vc-smyn-suffix {
+        opacity: 0.8;
+        display: inline !important;
+        font-size: initial;
+        font-weight: var(--font-weight-medium);
+        line-height: 1.375rem !important;
+        color: inherit;
+
+        &::before {
+            opacity: 0.625;
+            content: "@";
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.username_c19a55:not(:has(.vc-smyn-suffix)) {
+    &::before {
+        content: "@";
+        opacity: 0.625;
+    }
+}
+
 :root {
     /* change padding of the bar */
     --rscb-chat-box-padding: 8px; /* default is 8px for alignment */

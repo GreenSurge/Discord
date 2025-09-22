@@ -562,7 +562,7 @@ section[class^="panels_"] div[class^="listeningAlong_"] {
     margin-top: -4px;
     margin-left: 3px;
     background-color: white;
-    background: url('https://discord.com/assets/d1fd617c21dd1b26.svg');
+    background: url('https://discordapp.com/assets/d1fd617c21dd1b26.svg');
     background-size: 8px;
     background-position: center;
 }

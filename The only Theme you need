@@ -226,52 +226,7 @@ section[class^="panels_"] div[class^="listeningAlong_"] {
     .connection__9bfb9:has(.connectedAccountVanityMetadata_fffe42) {
         order: -1;
     }
-}.avatarWrapper__37e49 {
-    flex-direction: column;
-    width: auto;
-    min-width: 48px;
-    height: 48px;
-    box-sizing: border-box;
-    justify-content: center;
-    flex: 1 !important;
-    border-radius: var(--radius-sm);
 
-    .avatar__37e49 {
-        width: 20px !important;
-        height: 20px !important;
-
-        >svg {
-            scale: 0.625;
-            top: -8px;
-            left: -8px;
-        }
-    }
-
-    .nameTag__37e49 {
-        flex-grow: unset !important;
-        width: max-content;
-    }
-
-    .panelSubtextContainer__37e49 {
-        display: none;
-    }
-
-    .panelTitleContainer__37e49 {
-        margin: 0px;
-        width: fit-content;
-
-        >div {
-            line-height: 13px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            font-family: var(--font-primary);
-            font-size: 12px;
-            font-weight: 500;
-            width: fit-content;
-            overflow: hidden !important;
-        }
-    }
-}
 
 .buttons__37e49 {
     display: contents;

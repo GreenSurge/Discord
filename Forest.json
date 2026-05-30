@@ -1,0 +1,23 @@
+
+{
+    "name": "Forest Green",
+    "description": "monkey",
+    "authors": [
+        {
+            "name": "Greensurge"
+        }
+    ],
+    "SemanticColors": {
+        "Background_accent": [
+            "#1E3627"
+        ],
+        "Background_base_low": [
+            "#0A2216"
+        ],
+        “Background_base_lower”: [
+            “#1E3627”
+        ],
+       “Background_base_lowest”: [
+            “#49655B”
+        ]
+    }
